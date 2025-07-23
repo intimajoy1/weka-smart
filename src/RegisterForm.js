@@ -37,7 +37,7 @@ const RegisterForm = () => {
 
     try {
       const payload = {
-        amount: "10",
+        amount: "249",
         phone: formatPhoneNumber(formData.phone),
       };
 
@@ -96,7 +96,7 @@ return (
       </h1>
       <p className="register-subtext">
         Join a supportive community of Kenyans who are making money online the legit way.
-        Get started for just <span>Ksh 199</span> and start earning up to <span className="highlight">Ksh 18,600/month </span>
+        Get started for just <span>Ksh 249</span> and start earning up to <span className="highlight">Ksh 18,600/month </span>
          doing simple online tasks — no tech skills needed.
       </p>
 
@@ -131,7 +131,7 @@ return (
         />
 
         <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Processing..." : "Join Now for Ksh 199"}
+          {isSubmitting ? "Processing..." : "Join Now for Ksh 249"}
         </button>
       </form>
 
