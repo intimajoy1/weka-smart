@@ -37,7 +37,7 @@ const RegisterForm = () => {
 
     try {
       const payload = {
-        amount: "10",
+        amount: "249",
         phone: formatPhoneNumber(formData.phone),
       };
 
