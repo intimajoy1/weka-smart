@@ -7,6 +7,8 @@
   pointer-events: none;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +38,86 @@
     transform: rotate(360deg);
   }
 }
+
+/* Page Layout */
+.register-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #fefce8, #ffffff);
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.register-container {
+  max-width: 640px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading and Paragraph */
+.register-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.register-subtext {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.register-subtext span {
+  font-weight: bold;
+}
+
+.register-subtext .highlight {
+  color: #16a34a;
+}
+
+/* Form Styling */
+.register-form {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.register-form input,
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.register-form button {
+  background: #16a34a;
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.register-form button:hover {
+  background: #15803d;
+}
+
+.response-message {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.register-note {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
