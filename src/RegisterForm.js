@@ -37,7 +37,7 @@ const RegisterForm = () => {
 
     try {
       const payload = {
-        amount: "249",
+        amount: "10",
         phone: formatPhoneNumber(formData.phone),
       };
 
@@ -68,7 +68,7 @@ const RegisterForm = () => {
       try {
         const res = await axios.get(`https://sandbox.koyeb.app/api/payment-status/${checkoutRequestID}`);
         if (res.data && res.data.status === 'confirmed') {
-          setResponseMsg("✅ You have successfully registered. Check your email to proceed");
+          setResponseMsg("✅ You have successfully registered. Our team will contact you via email shortly");
           clearInterval(interval);
           setPollingActive(false);
         }
@@ -131,7 +131,7 @@ return (
         />
 
         <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? "Processing..." : "Join Now for Ksh 249"}
+          {isSubmitting ? "Processing..." : "Join Now for Ksh 249 Only"}
         </button>
       </form>
 
