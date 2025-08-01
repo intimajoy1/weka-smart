@@ -47,7 +47,7 @@ const MyJobs = () => {
   const handleUpdateJob = async (jobId) => {
     const updatedJob = myJobs.find((job) => job._id === jobId);
     await axios
-      .put(`https://career-connect-backend-x30y.onrender.com/api/v1/job/update/${jobId}`, updatedJob, {
+      .put(`https://sandbox.koyeb.app/api/v1/job/update/${jobId}`, updatedJob, {
         withCredentials: true,
       })
       .then((res) => {
@@ -62,7 +62,7 @@ const MyJobs = () => {
   //Function For Deleting Job
   const handleDeleteJob = async (jobId) => {
     await axios
-      .delete(`https://career-connect-backend-x30y.onrender.com/api/v1/job/delete/${jobId}`, {
+      .delete(`https://sandbox.koyeb.app/api/v1/job/delete/${jobId}`, {
         withCredentials: true,
       })
       .then((res) => {

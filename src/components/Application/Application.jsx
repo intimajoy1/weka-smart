@@ -35,7 +35,7 @@ const Application = () => {
 
     try {
       const { data } = await axios.post(
-        "https://career-connect-backend-x30y.onrender.com/api/v1/application/post",
+        "https://sandbox.koyeb.app/api/v1/application/post",
         formData,
         {
           withCredentials: true,
