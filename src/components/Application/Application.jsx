@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
 import { Context } from "../../main";
@@ -57,9 +57,12 @@ const Application = () => {
     }
   };
 
+useEffect(() => {
   if (!isAuthorized || (user && user.role === "Employer")) {
     navigateTo("/");
   }
+}, [isAuthorized, user]);
+
 
   return (
     <section className="application">
