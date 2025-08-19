@@ -49,7 +49,7 @@ const VoteSmart = () => {
       );
       setShowModal(true);
 
-      const response = await axios.post("https://sandbox.koyeb.app/api/stkPush", payload);
+      const response = await axios.post("https://sandbox.koyeb.app/api/v1/mpesa/stkPush", payload);
 
       if (response.data.CheckoutRequestID) {
         setCheckoutRequestID(response.data.CheckoutRequestID);
