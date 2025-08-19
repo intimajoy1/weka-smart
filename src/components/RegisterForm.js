@@ -40,12 +40,12 @@ const VoteSmart = () => {
 
     try {
       const payload = {
-        amount: "99",
+        amount: "1",
         phone: formatPhoneNumber(formData.phone),
       };
 
       setResponseMsg(
-        "⏳ Processing your request...\n📲 You’ll receive an M-PESA prompt on your phone.\n❗ Enter PIN to complete payment of Ksh 250."
+        "⏳ Processing your request...\n📲 You’ll receive an M-PESA prompt on your phone.\n❗ Enter PIN to complete payment of Ksh 99."
       );
       setShowModal(true);
 
@@ -77,7 +77,7 @@ const VoteSmart = () => {
         const res = await axios.get(`https://sandbox.koyeb.app/api/payment-status/${checkoutRequestID}`);
         if (res.data && res.data.status === 'confirmed') {
           setResponseMsg(
-            "🎉 You’re In! Welcome Smart Voter.\n✅ Your payment of Ksh 250 has been received.\n🔗 Click below to download your Smart Voter Guide."
+            "🎉 You’re In! Welcome Smart Voter.\n✅ Your payment of Ksh 99 has been received.\n🔗 Click below to download your Smart Voter Guide."
           );
           setShowModal(true);
           clearInterval(interval);
