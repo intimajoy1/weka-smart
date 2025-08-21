@@ -10,7 +10,7 @@
 .splash-logo {
   width: 150px;
   height: 150px;
-  transition: transform 5s ease-in-out;
+  transition: transform 15s ease-in-out;
 }
 
 .start-animation {
