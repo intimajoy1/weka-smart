@@ -119,7 +119,7 @@ const VoteSmart = () => {
 
         if (status === 'confirmed') {
           setResponseMsg(
-            '🎉 You’re In! Welcome Smart Voter.\n✅ Your payment has been received.\n🔗 Click below to download your Smart Voter Guide.'
+            '🎉 You’re In! Welcome Smart Voter.\n✅ Your payment has been received.\n🔗 Click Here https://bit.ly/smartballotKE to access your Smart Voter App.'
           );
           setShowModal(true);
           clearInterval(intervalId);
