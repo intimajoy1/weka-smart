@@ -1,6 +1,6 @@
 // src/SplashScreen.js
 import React, { useEffect, useState } from 'react';
-import logo from '../logo512.png'; // adjust path if needed
+import logo from '../android-chrome-512x512.png'; // adjust path if needed
 import './SplashScreen.css';
 
 const SplashScreen = () => {
