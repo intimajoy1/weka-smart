@@ -274,7 +274,7 @@ const VoteSmart = () => {
           </button>
         </form>
         <p className="payment-note">
-          🔒 100% Secure Payment via <strong>M-Pesa</strong>
+          🔒 100% Secure Payment via <strong>M-Pesa Prompt</strong>
         </p>
       </section>
 
@@ -297,23 +297,38 @@ const VoteSmart = () => {
         </p>
       </footer>
 
-      {/* MODAL */}
-      {showModal && (
-        <div className="modal-overlay" onClick={() => setShowModal(false)}>
-          <div
-            className="modal-content"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              className="modal-close"
-              onClick={() => setShowModal(false)}
-            >
-              ×
-            </button>
-            <pre>{responseMsg}</pre>
-          </div>
-        </div>
-      )}
+{/* MODAL */}
+{showModal && (
+  <div className="modal-overlay" onClick={() => setShowModal(false)}>
+    <div
+      className="modal-content"
+      onClick={(e) => e.stopPropagation()}
+    >
+      <button
+        className="modal-close"
+        onClick={() => setShowModal(false)}
+      >
+        ×
+      </button>
+
+      {/* Response message */}
+      <div className="modal-body">
+        <div className="modal-message">{responseMsg}</div>
+
+        {/* Ballot Box Icon */}
+        <a
+          href="https://sites.google.com/votesmart"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ballot-link"
+        >
+          🗳️
+        </a>
+      </div>
+    </div>
+  </div>
+)}
+
     </div>
   );
 };

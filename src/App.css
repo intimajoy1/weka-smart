@@ -7,6 +7,30 @@ body {
   color: #222;
 }
 
+.modal-body {
+  text-align: center;
+  padding: 1rem;
+}
+
+.modal-message {
+  margin-bottom: 1rem;
+  white-space: pre-line; /* keeps line breaks */
+  font-size: 1rem;
+}
+
+.ballot-link {
+  display: inline-block;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.ballot-link:hover {
+  transform: scale(1.2);
+  color: #2e8b57; /* greenish highlight */
+}
+
+
 /* Navbar */
 .navbar {
   background: linear-gradient(90deg, black, red, green);
