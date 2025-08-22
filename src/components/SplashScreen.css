@@ -4,17 +4,17 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: white;
+  background-color: linear-gradient(90deg, black, red, green);
 }
 
 .splash-logo {
   width: 150px;
   height: 150px;
-  transition: transform 30s ease-in-out;
+  transition: transform 40s ease-in-out;
 }
 
 .start-animation {
-  animation: splashTiltZoom 3.5s ease-in-out forwards;
+  animation: splashTiltZoom 30s ease-in-out forwards;
 }
 
 @keyframes splashTiltZoom {
