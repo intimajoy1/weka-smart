@@ -2,42 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
+    <!-- Favicon & Icons -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Mobile & Theme -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#006400" />
+
+    <!-- SEO: Title & Description -->
+    <title>SmartBallot™ | 15 Minutes That Protect Your Vote</title>
     <meta
       name="description"
-      content="Break Free Financially With Just Your Phone 📱"
+      content="Don’t risk wasting your vote. SmartBallot™ is the 15-minute non-partisan checklist trusted by 100,000+ Kenyans to avoid costly ballot mistakes."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="keywords" content="SmartBallot, Kenya elections, avoid spoiled ballot, voter checklist, non-partisan voting guide, election preparation" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>WekaSmart</title>
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="SmartBallot™ | 15 Minutes That Protect Your Vote" />
+    <meta property="og:description" content="70% admit ballot mistakes. Be the 30% with SmartBallot™ — instant access, non-partisan, works on any smartphone." />
+    <meta property="og:image" content="%PUBLIC_URL%/smartballot-preview.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smartballot.onrender.com" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SmartBallot™ | 15 Minutes That Protect Your Vote" />
+    <meta name="twitter:description" content="Avoid spoiled ballots with the 15-minute SmartBallot™ checklist. Non-partisan, instant access, trusted by thousands." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/smartballot-preview.png" />
+
+    <!-- Fonts (Optional: Google Fonts) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data for Trust (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "SmartBallot",
+        "description": "A 15-minute non-partisan voter checklist to avoid ballot mistakes.",
+        "brand": "SmartBallot™",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "100000"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "99.00",
+          "priceCurrency": "KES",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to run SmartBallot™.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
