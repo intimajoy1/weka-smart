@@ -154,7 +154,7 @@ const VoteSmart = () => {
 
             if (rc === 0) {
               setResponseMsg(
-                '🎉 You’re In! Welcome Smart Voter.\n✅ Your payment has been confirmed (via query).\n🔗 Click Here https://bit.ly/smartvotingApp to access your Smart Voter App.'
+                '🎉 You’re In! Welcome Smart Voter.\n✅ Your payment has been confirmed.\n🔗 Click the bullot box icon below to proceed. It takes upto 15 minutes to gain access, Thank you for your patience.'
               );
               setShowModal(true);
               clearInterval(intervalId);
