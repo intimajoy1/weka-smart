@@ -297,7 +297,7 @@ const VoteSmart = () => {
         </p>
       </footer>
 
-{/* MODAL */}
+      {/* MODAL */}
 {showModal && (
   <div className="modal-overlay" onClick={() => setShowModal(false)}>
     <div
@@ -315,19 +315,22 @@ const VoteSmart = () => {
       <div className="modal-body">
         <div className="modal-message">{responseMsg}</div>
 
-        {/* Ballot Box Icon */}
-        <a
-          href="https://sites.google.com/votesmart"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ballot-link"
-        >
-          🗳️
-        </a>
+        {/* ✅ Show Ballot icon ONLY if payment is confirmed */}
+        {responseMsg.includes("confirmed") && (
+          <a
+            href="https://sites.google.com/votesmart"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ballot-link"
+          >
+            🗳️
+          </a>
+        )}
       </div>
     </div>
   </div>
 )}
+
 
     </div>
   );

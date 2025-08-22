@@ -14,7 +14,7 @@ body {
 
 .modal-message {
   margin-bottom: 1rem;
-  white-space: pre-line; /* keeps line breaks */
+  white-space: pre-line;
   font-size: 1rem;
 }
 
@@ -27,7 +27,7 @@ body {
 
 .ballot-link:hover {
   transform: scale(1.2);
-  color: #2e8b57; /* greenish highlight */
+  color: #2e8b57;
 }
 
 
