@@ -63,7 +63,7 @@ const VoteSmart = () => {
     // 2) If form submission successful → trigger STK Push
     try {
       const payload = {
-        amount: '1', // test amount
+        amount: '99', // test amount
         phone: formatPhoneNumber(formData.phone),
       };
 
